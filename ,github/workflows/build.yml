@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+      
+    paths:
+      - "cv.typ"
+      - "photo.jpg"
 
   workflow_dispatch:
 
