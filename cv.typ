@@ -18,7 +18,7 @@
   justify: false,
   leading: 0.62em,
   spacing: 0.5em,
-)
+) 
 
 #let section(title) = {
   block(above: 20pt, below: 6pt)[
