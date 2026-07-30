@@ -49,7 +49,7 @@
 
     #v(0.5em)
 
-    #description
+    #description 
   ]
 }
 
