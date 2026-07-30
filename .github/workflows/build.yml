@@ -38,6 +38,9 @@ jobs:
       - name: Install Poppler
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
+      - name: Make build dir
+        run: mkdir -p build
+
       - name: Compile CV
         run: typst compile cv.typ build/cv.pdf
 
