@@ -8,6 +8,7 @@ on:
     paths:
       - "cv.typ"
       - "photo.jpg"
+      - ".github/workflows/build.yml"
 
   workflow_dispatch:
 
