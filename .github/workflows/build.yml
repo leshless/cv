@@ -41,8 +41,14 @@ jobs:
       - name: Make build dir
         run: mkdir -p build
 
-      - name: Compile CV
+      - name: Compile CV default
         run: typst compile cv.typ build/cv.pdf
+
+      - name: Compile CV english
+        run: typst compile --input lang=en cv.typ build/cv-en.pdf
+      
+      - name: Compile CV russian
+        run: typst compile --input lang=ru cv.typ build/cv-ru.pdf
 
       - name: Create CV image
         run: pdftoppm -png -singlefile -r 200 build/cv.pdf build/cv

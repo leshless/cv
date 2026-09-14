@@ -1,3 +1,6 @@
+#let lang = sys.inputs.at("lang", default: "en")
+#let lang_ru = lang == "ru"
+
 #let accent = rgb("#315a80")
 #let muted = rgb("#667085")
 #let border = rgb("#d9dee5")
@@ -113,64 +116,64 @@
   align: top,
 
   [
-    #text(size: 20pt, weight: "bold", font: "Liberation Sans", fill: accent)[Лещук Глеб] 
+    #text(size: 20pt, weight: "bold", font: "Liberation Sans", fill: accent)[#{if lang_ru [Лещук Глеб] else [Gleb Leshuk]}] 
 
     #text(size: 13pt, weight: "medium", font: "Liberation Sans", fill: muted)[Software & DevOps Engineer]
 
     #v(1em)
 
-    #section("Опыт работы")
+    #section(if lang_ru [Опыт работы] else [Experience])
 
     #experience(
-      organization: "Яндекс, Москва",
+      organization: if lang_ru [Яндекс, Москва] else [Yandex, Moscow],
       role: "Intern Software Engineer",
-      dates: "Сентябрь 2024 – Январь 2025",
-      description: "Стажировался в команде Yandex Cloud Billing. Разрабатывал и реализовывал функциональные требования к системе управления продуктовым каталогом."
+      dates: if lang_ru [Сентябрь 2024 – Январь 2025] else [September 2024 – January 2025],
+      description: if lang_ru [Стажировался в команде Yandex Cloud Billing. Разрабатывал и реализовывал функциональные требования к системе управления продуктовым каталогом.] else [Interned in the Yandex Cloud Billing team. Developed and implemented functional requirements for the product catalog management system.]
     )
 
     #experience(
-      organization: "Яндекс, Москва",
+      organization: if lang_ru [Яндекс, Москва] else [Yandex, Moscow],
       role: "Middle Software Engineer",
-      dates: "Январь 2025 – Сентябрь 2025",
-      description: "Работал в команде Yandex Smart Home Backend. Занимался проектированием и реализацией продуктовых фичей, работал над протоколом интеграции нового устройства в систему умного дома, участвовал в архитектурных встречах со смежными командами, в рамках дежурств следил за reliability сервисов, помогал разбирать инциденты и тикеты из техподдержки."
+      dates: if lang_ru [Январь 2025 – Сентябрь 2025] else [January 2025 – September 2025],
+      description: if lang_ru [Работал в команде Yandex Smart Home Backend. Занимался проектированием и реализацией продуктовых фичей, работал над протоколом интеграции нового устройства в систему умного дома, участвовал в архитектурных встречах со смежными командами, в рамках дежурств следил за reliability сервисов, помогал разбирать инциденты и тикеты из техподдержки.] else [Worked in the Yandex IOT Backend team. Worked on designing and implementing product features, developed the integration protocol for new devices in the IOT system, participated in architectural meetings with adjacent teams, and followed up on service reliability during on-call duties.]
     )
 
     #experience(
-      organization: "ООО \"Понедельники\", Москва",
+      organization: if lang_ru [ООО "Понедельники", Москва] else [ООО "Понедельники", Moscow],
       role: "Network Engineer",
-      dates: "Апрель 2026 – Июль 2026",
-      description: "Проходил технологическую практику в условиях, совмещающих эксплуатационные и разработческие задачи. Анализировал работу распределённой системы мониторинга слаботочного оборудования (камер, микроконтроллеров, точек доступа, датчиков температуры) в крупной сети ритейл магазинов и диагностировал причины недоступности."
+      dates: if lang_ru [Апрель 2026 – Июль 2026] else [April 2026 – July 2026],
+      description: if lang_ru [Проходил технологическую практику в условиях, совмещающих эксплуатационные и разработческие задачи. Анализировал работу распределённой системы мониторинга слаботочного оборудования (камер, микроконтроллеров, точек доступа, датчиков температуры) в крупной сети ритейл магазинов и диагностировал причины недоступности.] else [Completed a technical internship in an environment that involved operational and development tasks. Analyzed the performance of a distributed monitoring system for low-voltage equipment (cameras, microcontrollers, access points, temperature sensors) in a large retail chain and diagnosed reasons for unavailability.]
     )
 
-    #section("Образование")
+    #section(if lang_ru [Образование] else [Education])
 
     #education(
-      name: "Школа №2086, Москва",
-      status: "Выпускник",
-      dates: "Сентябрь 2022 – Май 2024",
-      description: "Учился в профильном IT-классе. Окончил 11 класс с золотой медалью."
-    )
-
-    #education(
-      name: "ФКН НИУ \"ВШЭ\", Москва",
-      status: "Бакалавр",
-      dates: "Сентябрь 2024 – Настоящее время",
-      description: "Обучаюсь на образовательной программе \"Программная Инженерия\" на бюджетной основе. "
+      name: if lang_ru [Школа №2086, Москва] else [School #2086, Moscow],
+      status: if lang_ru [Выпускник] else [Graduate],
+      dates: if lang_ru [Сентябрь 2022 – Май 2024] else [September 2022 – May 2024],
+      description: if lang_ru [Учился в профильном IT-классе. Окончил 11 класс с золотой медалью.] else [Studied in a IT class. Graduated with honors.]
     )
 
     #education(
-      name: "Яндекс Практикум",
-      status: "Студент",
-      dates: "Сентябрь 2025 – Апрель 2026",
-      description: "Проходил платный курс от Яндекс Практикума \"DevOps для эксплуатации и разработки\"."
+      name: if lang_ru [ФКН НИУ "ВШЭ", Москва] else [FCS HSE, Moscow],
+      status: if lang_ru [Бакалавр] else [Bachelor],
+      dates: if lang_ru [Сентябрь 2024 – Настоящее время] else [September 2024 – Present],
+      description: if lang_ru [Обучаюсь на образовательной программе "Программная Инженерия" на бюджетной основе.] else [Studying in the "Software Engineering" program on a budget basis.]
     )
 
-    #section("Проекты")
+    #education(
+      name: if lang_ru [Яндекс Практикум] else [Yandex Practicum],
+      status: if lang_ru [Студент] else [Student],
+      dates: if lang_ru [Сентябрь 2025 – Апрель 2026] else [September 2025 – April 2026],
+      description: if lang_ru [Проходил платный курс от Яндекс Практикума "DevOps для эксплуатации и разработки".] else [Completed a paid course by Yandex Practicum "DevOps for Operations and Development".]
+    )
+
+    #section(if lang_ru [Проекты] else [Projects])
 
     #project(
       name: "Cstati Events",
-      extra: "Платформа управления мероприятиями",
-      description: "Курсовой проект, разработанный совместно с участниками студенческой организации ФКН \"Cstati\". Платформа предоставляет функционал афиши мероприятий и покупки билетов на них.",
+      extra: if lang_ru [Платформа управления мероприятиями] else [Event Management Platform],
+      description: if lang_ru [Курсовой проект, разработанный совместно с участниками студенческой организации ФКН "Cstati". Платформа предоставляет функционал афиши мероприятий и покупки билетов на них.] else [A course project developed side by side with members of the student organization "Cstati". The platform provides functionality for event posters and ticket purchases.],
       links: (
         link("https://cstati.com")[cstati.com], 
       )
@@ -197,26 +200,26 @@
         ]
       ]
 
-      20 лет, Москва\
+      #{if lang_ru [20 лет; Москва] else [20 y.o.; Moscow]}\
       #link("tel:+791265655029")[+7(916)565-50-29]\
       #link("mailto:leshless21\@gmail.com")[leshless21\@gmail.com]\
       #link("https://github.com/leshless")[github.com/leshless]\
       #link("https://t.me/leshless")[t.me/leshless ]
 
 
-      #section("Технологии")
+      #section(if lang_ru [Технологии] else [Skills])
 
       Go, Python, Javascript, C, SQL, PostgreSQL, MySQL, MongoDB, Kafka, Redis, REST, gRPC, Linux, Git, Gitlab CI, Docker, Prometheus, Grafana, Yandex Cloud, Agile, Scrum
 
-      #section("Языки")
+      #section(if lang_ru [Языки] else [Languages])
 
       #list(
         tight: true,
         marker: [•],
         body-indent: 4pt,
-        [Русский — Native],
-        [Английский — C2],
-        [Немецкий — A1],
+        if lang_ru [Русский — Native] else [Russian — Native],
+        if lang_ru [Английский — C2] else [English — C2],
+        if lang_ru [Немецкий — A1] else [German — A1],
       )
     ]
   ],
