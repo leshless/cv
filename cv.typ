@@ -301,7 +301,7 @@
         tight: true,
         marker: [•],
         body-indent: 4pt,
-        if lang_ru [Английский — C2] else [English — C2],
+        if lang_ru [Английский — C1] else [English — C1],
         if lang_ru [Немецкий — A1] else [German — A1],
         if lang_ru [Русский — Native] else [Russian — Native],
       )
