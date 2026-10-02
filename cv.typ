@@ -143,14 +143,14 @@
   [
     #text(size: 20pt, weight: "bold", font: "Liberation Sans", fill: accent)[#{if lang_ru [Лещук Глеб] else [Gleb Leshuk]}] 
 
-    #text(size: 13pt, weight: "medium", font: "Liberation Sans", fill: muted)[Software Engineer | Backend & Infrastructure]
+    #text(size: 13pt, weight: "medium", font: "Liberation Sans", fill: muted)[Backend Engineer | Go]
 
     #v(1em)
 
     #if lang_ru [
-      Раработчик с опытом в бэкенде, распределенных системах и инфраструктуре. Системно подхожу к решению задач, стремлюсь автоматизировать процессы и постоянно развиваю инженерные навыки.
+      Go Бекэнд Раработчик с годом опыта в Яндексе, разрабатывал бекэнд сервисы для крупной IoT платформы.
     ] else [
-      Developer with experience in backend, distributed systems and infrastructure. Keeping systematic approach to problem solving, while striving to automate processes and constantly improve engineering skills.
+      Go Backend Engineer with 1 year of production experience at Yandex, developing backend services for large-scale IoT platform.
     ]
 
     #v(0.3em)
@@ -164,11 +164,9 @@
       description: if lang_ru [
         - Анализировал распределённую систему мониторинга слаботочного оборудования в сети из 2+ тыс. ритейл магазинов сети ВкусВилл, включавшую камеры, микроконтроллеры, точки доступа и датчики температуры.
         - Диагностировал причины недоступности оборудования и исследовал взаимодействие компонентов системы для локализации проблем на уровне сети и прикладных сервисов.
-        - Автоматизировал диагностику доступности устройств.
       ] else [
         - Analyzed a distributed monitoring system deployed across 2k+ retail stores (VkusVill LLC), covering cameras, microcontrollers, access points, and temperature sensors.
         - Investigated equipment availability issues and traced failures across network and application-level components to identify root causes.
-        - Automated device network availability monitoring.
       ],
       links: (
         link("https://vkusvill.ru/projects/")[VkusVill],
@@ -177,7 +175,7 @@
 
     #experience(
       organization: if lang_ru [Яндекс, Москва] else [Yandex, Moscow],
-      role: "Middle Software Engineer",
+      role: "Software Engineer",
       dates: if lang_ru [Январь 2025 – Сентябрь 2025] else [January 2025 – September 2025],
       description: if lang_ru [
         - Разрабатывал backend для Yandex Smart Home — платформы интеграции и управления умными устройствами, используемой 20+ млн. пользователей (10+ тыс. rps).
@@ -186,8 +184,8 @@
         - Проектировал и разрабатывал продуктовую фичу для удержания пользователей — геймификацию онбординга в приложении.
         - Участвовал в архитектурных обсуждениях со смежными командами и дежурствах: анализировал production-инциденты, следил за reliability сервисов и разбирал обращения технической поддержки.
       ] else [
-        - Developed backend services for Yandex Smart Home, a platform for integrating and controlling IoT devices used by 20m+ users (10k+ rps).
-        - Designed and implemented an integration protocol for new IoT device (presence sensor), enabling release.
+        - Developed backend services for Yandex Smart Home, an IoT platform serving 20M+ users and handling 10K+ RPS.
+        - Designed and implemented an integration protocol for a new IoT device (presence sensor), enabling its production release.
         - Optimized a business process for exporting data from the DWH, reducing execution time from 8 hours to 10 minutes.
         - Designed and implemented a user retention feature introducing gamification to the in-app onboarding experience.
         - Participated in architectural discussions with adjacent teams and on-call rotations, investigating production incidents, monitoring service reliability, and resolving support cases.
@@ -242,28 +240,13 @@
       description: if lang_ru [
         Обучался на образовательной программе "Программная Инженерия" на бюджетной основе.
       ] else [
-        Studying in the "Software Engineering" program on a budget basis.
+        Studied in the "Software Engineering" program on a budget basis.
       ],
       links: (
         link("https://cs.hse.ru")[FCS HSE], 
       )
     )
     
-    #education(
-      name: if lang_ru [Школа №2086, Москва] else [School #2086, Moscow],
-      status: if lang_ru [Выпускник] else [Graduate],
-      dates: if lang_ru [Сентябрь 2022 – Май 2024] else [September 2022 – May 2024],
-      description: if lang_ru [
-        Учился в профильном IT-классе. Окончил 11 класс с золотой медалью.
-      ] else [
-        Studied in a IT class. Graduated with honors.
-      ],
-      links: (
-        link("https://shkolamoskva.ru/predprof/classes/9/")[IT Class], 
-      )
-    )
-
-
     #section(if lang_ru [Проекты] else [Projects])
 
     #project(
@@ -272,7 +255,7 @@
       description: if lang_ru [
         Курсовой проект, разработанный совместно с участниками студенческой организации ФКН "Cstati". Платформа предоставляет функционал афиши мероприятий и покупки билетов на них.
       ] else [
-        A course project developed side by side with members of the student organization "Cstati". The platform provides functionality for event posters and ticket purchases.
+        A course project developed in collaboration with members of the student organization "Cstati". The platform provides event discovery and ticket purchasing functionality.
       ],
       links: (
         link("https://cstati.com")[Cstati], 
@@ -300,7 +283,6 @@
         ]
       ]
 
-      #{if lang_ru [20 лет] else [20 y.o.]}\
       #{if lang_ru [Тбилиси, Грузия; Удаленно] else [Tbilisi, Georgia; Remote]}\
       #link("tel:+791265655029")[+7(916)565-50-29]\
       #link("mailto:leshless21\@gmail.com")[leshless21\@gmail.com]\
