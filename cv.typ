@@ -285,10 +285,10 @@
 
       #{if lang_ru [Тбилиси, Грузия; Удаленно] else [Tbilisi, Georgia; Remote]}\
       #link("tel:+791265655029")[+7(916)565-50-29]\
-      #link("mailto:leshless21\@gmail.com")[leshless21\@gmail.com]\
+      #link("mailto:coyotetime\@proton.me")[coyotetime\@proton.me]\
       #link("https://github.com/leshless")[github.com/leshless]\
-      #link("https://www.linkedin.com/in/leshless")[linkedin.com/in/leshless]\
-      #link("https://t.me/leshless")[t.me/leshless ]
+      #link("https://www.linkedin.com/in/coyotetime")[linkedin.com/in/coyotetime]\
+      #link("https://t.me/leshless")[t.me/coyotetime]\
 
 
       #section(if lang_ru [Технологии] else [Skills])
