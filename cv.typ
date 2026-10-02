@@ -288,7 +288,7 @@
       #link("mailto:coyotetime21@proton.me")[coyotetime21\@proton.me]\
       #link("https://github.com/leshless")[github.com/leshless]\
       #link("https://www.linkedin.com/in/coyotetime")[linkedin.com/in/coyotetime]\
-      #link("https://t.me/leshless")[t.me/coyotetime]\
+      #link("https://t.me/coyotetime")[t.me/coyotetime]\
 
 
       #section(if lang_ru [Технологии] else [Skills])
